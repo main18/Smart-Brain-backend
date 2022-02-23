@@ -60,7 +60,7 @@ const database = {
 
 // Root route
 app.get("/", (req, res) => {
-  res.send(database.users);
+  res.send("it's working!");
 });
 
 // Signin route
