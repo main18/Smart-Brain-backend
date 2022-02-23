@@ -26,10 +26,10 @@ const db = knex({
   },
 });
 
-db.select("*").from("users").then(console.log);
+// db.select("*").from("users").then(console.log);
 
 // Fake database
-const database = {
+/* const database = {
   users: [
     {
       id: "1",
@@ -56,7 +56,7 @@ const database = {
       joined: new Date(),
     },
   ],
-};
+}; */
 
 // Root route
 app.get("/", (req, res) => {
