@@ -25,38 +25,6 @@ const db = knex({
   },
 });
 
-// db.select("*").from("users").then(console.log);
-
-// Fake database
-/* const database = {
-  users: [
-    {
-      id: "1",
-      name: "aymane",
-      email: "aymane@gmail.com",
-      password: "easypizzy",
-      entries: 0,
-      joined: new Date(),
-    },
-    {
-      id: "2",
-      name: "sally",
-      email: "sally@gmail.com",
-      password: "easypizzy2",
-      entries: 0,
-      joined: new Date(),
-    },
-    {
-      id: "3",
-      name: "john",
-      email: "john@gmail.com",
-      password: "easypizzy3",
-      entries: 0,
-      joined: new Date(),
-    },
-  ],
-}; */
-
 // Root route
 app.get("/", (req, res) => {
   res.send("it's working!");
